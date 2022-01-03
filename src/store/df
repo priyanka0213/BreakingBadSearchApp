@@ -1,0 +1,66 @@
+import {combineReducers} from 'redux';
+//Combining all the Reducers
+import loaderReducer from './LoaderReducers';
+import SendOTPReducer from '../reducers/sendOTP';
+import AlreadyUserReducer from './alreadyUser';
+import VerifyOTP from './VerifyOTP';
+import UserProfileReducer from './UserProfile';
+import PlayerStats from './PlayerStats';
+import FollowRequestInitiate from './FollowRequestInitiate';
+import FeedInfoReducer from './FeedInfoReducer';
+import ViewTeamReducer from './ViewTeamReducer';
+import MyProfileReducer from './MyProfileReducer';
+import PlayerHighlight from './PlayerHighlights';
+import Upvote from './Upvote';
+import PlayerOverview from './PlayerOverview';
+import FollowersReducer from './Followers';
+import NotificationReducer from './Notifications';
+import VideoDetails from './VideoDetails';
+import Comments from './Comments';
+import AddComments from './AddComment';
+import DeleteComment from './DeleteComment';
+import Edit from './edit';
+import EmailReducer from './EmailReducer';
+import Subscribe from './SubscribeToMatch';
+//import SeacrhReducer from './Search'
+import Search from './Search';
+import FollowRequests from './FollowRequests';
+import AcceptOrReject from './AcceptOrReject';
+import AddPlayerToMatch from './AddPlayerToMatch';
+//import Subscribe from './SubscribeToMatch'
+import Un_FOllow from './Unfollow';
+import AcceptOrRejectActions from './FriendRequest';
+
+const rootReducer = combineReducers({
+  LoaderReducer: loaderReducer,
+  SendOTPReducer: SendOTPReducer,
+  SubscribeReducer: Subscribe,
+  AlreadyUserReducer: AlreadyUserReducer,
+  VerifyOTPreducer: VerifyOTP,
+  UserProfileReducer: UserProfileReducer,
+  MyProfileReducer: MyProfileReducer,
+  EmailReducer: EmailReducer,
+  PlayerStatsReducer: PlayerStats,
+  FollowRequestInitiateReducer: FollowRequestInitiate,
+  FeedInfoReducer: FeedInfoReducer,
+  ViewTeamReducer: ViewTeamReducer,
+  //SearchReducer:Search,
+  SeacrhReducer: Search,
+  PlayerHighlightReducer: PlayerHighlight,
+  UpvoteReducer: Upvote,
+  PlayerOverviewReducer: PlayerOverview,
+  FollowersReducer: FollowersReducer,
+  NotificationReducer: NotificationReducer,
+  VideoDetailsReducer: VideoDetails,
+  CommentsReducer: Comments,
+  AddCommentReducer: AddComments,
+  DeleteCommentReducer: DeleteComment,
+  EditReducer: Edit,
+  FollowRequestReducer: FollowRequests,
+  RespondToFriendRequestReducer: AcceptOrReject,
+  AddPlayerToMatchreducer: AddPlayerToMatch,
+  UnfollowReducer: Un_FOllow,
+  AcceptOrReject: AcceptOrRejectActions,
+});
+
+export default rootReducer;
